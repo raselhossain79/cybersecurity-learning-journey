@@ -2,7 +2,7 @@
 
 These tools are used to identify the approximate geographical location of an IP address.
 
-## MaxMind
+## MaxMind *
 
 Purpose:
 GeoIP database provider.
@@ -30,7 +30,7 @@ Aggregated IP geolocation lookup.
 Used for:
 - Compare results from multiple geolocation databases.
 
-## WhoisFreaks
+## WhoisFreaks *
 
 Purpose:
 WHOIS and IP data API.
