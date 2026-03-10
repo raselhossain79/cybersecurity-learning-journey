@@ -1,0 +1,80 @@
+1. https://subdomainfinder.c99.nl/  *
+Web based tools:
+
+https://subdomainfinder.c99.nl/   *
+https://subdomainfinder.in/
+https://www.merklemap.com/
+
+
+
+kali Tools:
+
+Subfinder
+Assetfinder
+sublist3
+
+1. 🟢 Subfinder
+# Install
+go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
+
+# Basic scan
+subfinder -d example.com
+
+# Save Output into file.txt
+subfinder -d example.com -o output.txt
+
+# Silent mode (only subdomains)
+subfinder -d example.com -silent
+
+# Scan from all sources
+subfinder -d example.com -all
+
+# Multiple domains
+subfinder -dL domains.txt -o output.txt
+
+# Verbose mode
+subfinder -d example.com -v
+
+
+2. 🔵 Assetfinder
+# Install
+go install github.com/tomnomnom/assetfinder@latest
+
+# Basic scan
+assetfinder example.com
+
+# Only subdomains 
+assetfinder --subs-only example.com
+
+# Save Output into file.txt
+assetfinder --subs-only example.com > output.txt
+
+# Multiple domains
+cat domains.txt | assetfinder --subs-only
+
+3. 🟡 Sublist3r
+# Install
+sudo apt install sublist3r
+# Or
+pip install sublist3r
+
+# Basic scan
+sublist3r -d example.com
+
+# Save Output into file.txt
+sublist3r -d example.com -o output.txt
+
+# Using Specific search engines 
+sublist3r -d example.com -e google,yahoo,bing
+
+# Verbose mode
+sublist3r -d example.com -v
+
+# Bruteforce mode on
+sublist3r -d example.com -b
+
+# Set Threads
+sublist3r -d example.com -t 50
+
+# With Port scan 
+sublist3r -d example.com -p 80,443
