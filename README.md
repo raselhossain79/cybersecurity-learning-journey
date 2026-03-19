@@ -18,13 +18,6 @@ This repository contains my learning notes, tools, labs, and practical knowledge
 - PortSwigger Web Security Academy
 - Personal Lab Practice
 
-## Tools Covered
-
-- Burp Suite
-- Nmap
-- Wireshark
-- OSINT Tools
-
 ## Goal
 
 To build practical cybersecurity and penetration testing skills and document my learning journey.
